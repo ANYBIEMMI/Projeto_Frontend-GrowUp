@@ -94,8 +94,9 @@ section.introducao-sobre h1 {
 }
 
 section.video-sobre iframe {
-    width: 100%;
-    height: 600px;
+   
+    height: 400px;
+    padding: 40px;
 }
 
 section.missao-visao-valores {
@@ -244,5 +245,39 @@ main h1 {
     header nav ul {
         padding: 0;
         margin: 0;
+        text-align: center;
     }
 } 
+@media (max-width: 800px) {
+    section.desenvolvimento .container,section.marketing .container, section.consultoria-ux .container{
+        flex-wrap: wrap;
+    }
+
+
+    section.desenvolvimento .container .texto,section.marketing .container .texto,section.consultoria-ux .container .texto  ,.container h1{
+        text-align: center;
+    }
+
+}
+/*SOBRE*/
+@media (max-width: 800px) {
+    section.introducao-sobre .intro,section.video-sobre .container, section.missao-visao-valores .container{
+        flex-wrap: wrap;
+    }
+
+
+    section.introducao-sobre .intro,section.video-sobre .container, section.missao-visao-valores .container.article{
+        text-align: center;
+    }
+
+}
+
+@media(max-width: 800px){
+    container.contato{
+        flex-wrap: wrap;
+        text-align: center;
+        padding:  5px 5px 5px 5px;
+    }
+    
+    
+}
